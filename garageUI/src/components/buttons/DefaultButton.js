@@ -16,7 +16,8 @@ export default class DefaultButton extends Component {
   render() {
   	const {
       text,
-      // navigation
+      route,
+      navigation
     } = this.props;
   	// const backgroundColor = background || 'transparent';
   	// const color = textColor || colors.black;
@@ -28,8 +29,14 @@ export default class DefaultButton extends Component {
     // const opacityStyle = disabled || loading ? 0.5 : 1;
     // const textOpacity = loading ? 0 : 1;
 
+    // const navigate = () => {
+    //   debugger
+    //   console.log('route', {route});
+    //   this.props.navigation.navigate(route);
+    // }
+
     return (
-      <TouchableHighlight style={styles.button}  onPress={() => this.props.navigation.navigate('SignIn')}>
+      <TouchableHighlight style={styles.button}  onPress={() => navigation.navigate(route) }>
         <Text>{text}</Text>
       </TouchableHighlight>
     );

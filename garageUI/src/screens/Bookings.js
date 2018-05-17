@@ -9,20 +9,17 @@ export default class Panel extends Component {
         <FlatList
           data={[
             {
-              title: 'My Bookings',
-              route:'Bookings'
+              title: 'Booking One',
             },
             {
-              title: 'Rent a new Space',
-              route:'Rentals'
+              title: 'Booking Two',
             },
             {
-              title: 'My Spaces',
-              route:'Spaces'
+              title: 'Booking Three',
             }
           ]}
           renderItem={({item}) =>
-            <DefaultButton text={item.title} navigation={this.props.navigation} route={item.route}/>
+            <Text>{item.title}</Text>
           }
         />
       </View>
