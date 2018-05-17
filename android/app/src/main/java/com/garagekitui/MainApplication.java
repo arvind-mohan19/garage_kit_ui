@@ -1,4 +1,4 @@
-package com.mappage;
+package com.garagekitui;
 
 import android.app.Application;
 

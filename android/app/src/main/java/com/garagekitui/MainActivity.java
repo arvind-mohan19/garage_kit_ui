@@ -1,4 +1,4 @@
-package com.mappage;
+package com.garagekitui;
 
 import com.facebook.react.ReactActivity;
 import com.burnweb.rnpermissions.RNPermissionsPackage;  
@@ -11,7 +11,7 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "mapPage";
+        return "garageKitUi";
     }
     @Override
 	public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
